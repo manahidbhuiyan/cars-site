@@ -1,0 +1,241 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 80px 0px 100px 0px;
+}
+
+.choose-car-btn {
+  background-color: rgba(215, 161, 79, 1);
+  color: white;
+  font-weight: 600;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.about-image-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.inner-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* why choose us  */
+
+.why-choose-us-container {
+  background-color: #fdfaf3;
+  max-height: 540px;
+}
+
+.why-choose-us {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.why-choose-us-image {
+  margin-top: 110px;
+}
+
+.why-choose-us-content {
+  padding: 80px 0;
+}
+
+/* offer  */
+
+.offer-container {
+  background-image: url("../images/About\ Us/offer-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.offer-container .offer-image img {
+  visibility: hidden;
+}
+
+/* testimonials  */
+
+.testimonial-container {
+  margin-top: 50px;
+  margin-bottom: 300px;
+}
+.testimonial-card-container {
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 40px 30px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  min-height: 400px;
+  max-height: 400px;
+  box-shadow: 10px 10px 10px 0px #00000017;
+    
+}
+.swiper-wrapper{
+  padding-bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #d7a14f !important;
+  opacity: 1 !important;
+  /* Ensure the dots are fully visible */
+  width: 10px !important;
+  /* Default width for inactive dots */
+  height: 10px !important;
+  border-radius: 50% !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #d7a14f !important;
+  /* Remove the background color of the active dot */
+  width: 35px !important;
+  /* Line width for the active dot */
+  height: 10px !important;
+  /* Same height as inactive dots */
+  border-radius: 10px !important;
+  /* Remove rounded corners */
+  border: none !important;
+  box-shadow: inset 0px 0px 0px 1px #d7a14f !important;
+  /* 1px line with the specified color */
+}
+
+
+/*---------------------------------
+            responsive
+ --------------------------------*/
+
+@media only screen and (max-width: 576px) {
+  .why-choose-us-container {
+    max-height: 500px;
+    margin-bottom: 500px;
+  }
+
+  .why-choose-us {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .why-choose-us-content {
+    padding: 50px 0;
+  }
+  .why-choose-us-image {
+    margin-top: 20px;
+  }
+
+  .offer-container {
+    background-position: center;
+  }
+
+  .offer-container .offer-image img {
+    display: none;
+  }
+  .testimonial-container {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .why-choose-us-container {
+    max-height: 500px;
+    margin-bottom: 750px;
+  }
+  .why-choose-us {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .why-choose-us-image {
+    margin-top: 20px;
+  }
+
+  .offer-container .offer-image img {
+    display: none;
+  }
+
+  .testimonial-container {
+    margin-bottom: 200px;
+  }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+  .offer-container .offer-image img {
+    display: none;
+  }
+}
+
+
+
+@media only screen and (max-width: 576px) {
+  .about {
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px 0px;
+  }
+  .about-image-container {
+    flex-direction: column;
+  }
+  .testimonial-card{
+    padding: 20px;
+    min-height: 450px;
+    max-height: 450px;
+  }
+  .testimonial-card-body{
+    flex-direction: column;
+    align-items: center;
+    gap: 0 !important;
+    row-gap: 20px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .testimonial-card{
+    padding: 20px !important;
+    min-height: 470px !important;
+    max-height: 470px !important;
+  }
+}
+
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .about {
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 0px 80px 0px;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px 0px;
+  }
+  .about-image-container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .about-image-container > img {
+    width: 50%;
+    height: 95%;
+  }
+  .inner-image-container > img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.5px) {
+  .about-image-container > img {
+    width: 50%;
+    height: 70%;
+  }
+  .inner-image-container > img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,505 @@
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* banner */
+
+.service-details-banner {
+  background-image: url("../images/Service\ Details/bg.png"),
+    url("../images/Common/tire.png");
+  background-size: cover, auto;
+  background-position: center, bottom left;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 300px;
+}
+
+.our-luxury-wedding-cars-container {
+  padding: 80px 0;
+}
+
+.image-container {
+  margin-top: 50px;
+}
+
+.image-item {
+  width: 100%;
+  position: relative;
+  transition: 1s all ease-in;
+  overflow: hidden;
+}
+.image-item img{
+  filter: blur(1px) opacity(0.9); 
+}
+
+.image-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  font-size: 24px;
+  color: white;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding-top: 50px;
+}
+.image-button{
+  position: absolute;
+  left: 50%;
+  bottom: -54px;
+  transform: translateX(-50%);
+  width: 230px;
+  padding: 15px;
+  background-color: #D7A14F;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+.image-item:hover .image-button{
+  bottom: 15px;
+  transition: .6s ease-in-out;
+}
+.image-item:hover .image-title{
+  bottom: 20%;
+  transition: .6s ease-in-out;
+}
+
+
+.swiper-pagination-bullet {
+  background-color: #d7a14f !important;
+  opacity: 1 !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #d7a14f !important;
+  width: 35px !important;
+  height: 10px !important;
+  border-radius: 10px !important;
+  border: none !important;
+  box-shadow: inset 0px 0px 0px 1px #d7a14f !important;
+  /* 1px line with the specified color */
+}
+
+
+@media only screen and (max-width: 576px) {
+  .section-title {
+    font-size: 30px;
+  }
+  .our-luxury-wedding-cars-container {
+    padding: 30px 0;
+  }
+
+  .image-container {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+
+  .image-item {
+    padding: 0 15px;
+  }
+
+  .text-container {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 769px) {
+  .text-container {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+  }
+}
+
+.highlight-container {
+  background-image: url("../images/Service\ Details/highlight.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 670px;
+  display: flex;
+  align-items: center;
+}
+.highlight {
+  display: flex;
+}
+
+.highlight-text {
+  font-size: 24px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 769px) {
+  .highlight {
+    flex-direction: column;
+  }
+  .fake-container {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .highlight {
+    flex-direction: column;
+  }
+  .fake-container {
+    display: none;
+  }
+}
+
+/* the-most-popular-wedding-container  */
+
+.the-most-popular-wedding-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 80px 0;
+}
+
+.popular-wedding-image-container {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+.popular-wedding-image-container img {
+  max-width: 48%;
+  height: auto;
+  display: block;
+}
+.swiperTestimonial {
+  padding-bottom: 50px !important;
+}
+.image-top {
+  position: absolute;
+  top: -0px;
+  left: 52%;
+}
+
+.the-most-popular-wedding-container p {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 576px) {
+  .the-most-popular-wedding-container {
+    flex-direction: column;
+    padding: 40px 15px;
+  }
+  .popular-wedding-image-container {
+    position: static;
+    flex-direction: column;
+  }
+
+  .popular-wedding-image-container img {
+    max-width: 100%;
+  }
+
+  .image-top {
+    position: static;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .section-title {
+    font-size: 35px;
+  }
+
+  .the-most-popular-wedding-container {
+    flex-direction: column;
+    padding: 60px 0;
+  }
+
+  .popular-wedding-image-container {
+    position: static;
+  }
+
+  .popular-wedding-image-container img {
+    max-width: 50%;
+  }
+
+  .image-top {
+    position: static;
+  }
+}
+
+.traditional-container {
+  background-color: #fdfaf3;
+  max-height: 750px;
+  margin-bottom: 120px;
+}
+
+.traditional {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.traditional-image {
+  margin-top: 140px;
+}
+
+.traditional-content {
+  margin-top: 120px;
+}
+
+.wedding-car {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/Service\ Details/Prestige wedding car/bg.png") no-repeat
+      center center/cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+.luxury-container {
+  background-color: #fdfaf3;
+  max-height: 700px;
+  margin-bottom: 120px;
+}
+
+.luxury {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.luxury-image {
+  margin-top: 110px;
+}
+
+.luxury-content {
+  margin-top: 80px;
+}
+
+.extravagant-extras {
+  padding: 80px 0;
+}
+
+/* WEDDING HIRE LOCATIONS  */
+
+.location-container {
+  display: flex;
+  gap: 50px;
+  padding: 80px 0;
+}
+
+@media only screen and (max-width: 576.5px) {
+  .traditional-container {
+    background-color: white;
+    margin-bottom: 380px;
+  }
+  .luxury-container {
+    background-color: white;
+    margin-bottom: 600px;
+  }
+
+  .traditional {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .luxury {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .traditional-image,
+  .luxury-image {
+    margin-top: 20px;
+  }
+  .traditional-content,
+  .luxury-content {
+    padding: 10px 0;    
+    margin-top: 20px;
+  }
+  .extravagant-extras {
+    padding: 60px 15px 20px;
+  }
+
+  .location-container {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .location-title-container {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .traditional-container {
+    max-height: 600px;
+    margin-bottom: 650px;
+  }
+  .traditional {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .traditional-image {
+    margin-top: 20px;
+  }
+  .traditional-content {
+    margin-top: 20px;
+  }
+
+  .luxury-container {
+    max-height: 600px;
+    margin-bottom: 750px;
+  }
+  .luxury {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .luxury-image {
+    margin-top: 20px;
+  }
+  .luxury-content {
+    margin-top: 50px;
+  }
+}
+
+/* Quote section  */
+
+.quote-container {
+  background-color: #d7a14f;
+  max-height: 500px;
+  margin-bottom: 430px;
+  background-image: url("../images//Service\ Details/image 30.png"); 
+  background-position: bottom right; 
+  background-repeat: no-repeat;
+}
+
+.quote {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.quote-content {
+  padding: 110px 0;
+  color: white;
+}
+
+.quote-form {
+  background-color: white;
+  margin-top: 80px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+}
+
+.input-style {
+  background-color: rgba(244, 244, 244, 1);
+  border: 1px solid rgba(211, 158, 78, 0.2);
+  padding: 13px 15px;
+  margin-bottom: 22px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: rgba(244, 244, 244, 1);
+  box-shadow: none;
+}
+
+.quote-button {
+  width: 100%;
+  background-color: #212121;
+  color: white;
+  font-weight: 600;
+  padding: 15px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 576px) {
+  .quote-container {
+    max-height: 500px;
+    margin-bottom: 770px;
+  }
+
+  .quote {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .quote-content {
+    padding: 50px 0;
+  }
+
+  .quote-form {
+    margin-top: 0px;
+  }
+
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .quote-container {
+    margin-bottom: 870px;
+  }
+  .quote {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .quote-form {
+    margin-top: 30px;
+  }
+}
+
+
+/* accordion  */
+
+.accordion-button {
+  position: relative;
+}
+
+.accordion-button img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-button.collapsed img {
+  transform: rotate(0deg);
+}
+
+.accordion-button:not(.collapsed) img {
+  transform: rotate(180deg);
+}
+
+.accordion-button::after {
+  content: "\f107";
+  /* FontAwesome down arrow icon */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  transition: transform 0.3s ease-in-out;
+  background-color: transparent;
+  background-image: none !important;
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.accordion-button.collapsed::after {
+  background-color: transparent;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
